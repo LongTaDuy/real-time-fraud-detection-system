@@ -313,5 +313,3 @@ Shipping a fraud API is less about picking a single algorithm and more about **g
 ---
 
 ## License
-
-Add a `LICENSE` file if you open-source the repo; none is bundled by default.
