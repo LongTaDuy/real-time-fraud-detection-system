@@ -296,16 +296,6 @@ See [`tests/README.md`](tests/README.md) for fixture notes, rate-limit behavior 
 
 ---
 
-## Resume-ready highlights
-
-- Built a **FastAPI** fraud-scoring service with **PostgreSQL** persistence, **Redis** caching, and an **async worker** backed by a Redis queue.  
-- Implemented **ML training and inference** pipelines using **scikit-learn** and **XGBoost**, with **versioned joblib bundles**, metadata, and a safe **stub** fallback for development.  
-- Applied **Pydantic**-driven validation, **Alembic** migrations, **duplicate-transaction** handling, and **read-optimized** list/detail APIs for transactions and predictions.  
-- Added **operational controls**: structured logging, readiness probes, request size limits, and sliding-window **rate limiting**.  
-- Wrote a **broad pytest suite** (API, services, cache, ML loading) using isolated test doubles.  
-
----
-
 ## What I learned
 
 Shipping a fraud API is less about picking a single algorithm and more about **glue**: making sure the same scoring logic runs in the **request path** and the **worker**, that **ids and timestamps** are validated hard enough to catch bad upstream data, and that **observability** and **failure modes** (stub model, 409 on duplicates, 503 when the bundle cannot load) are explicit. Training on a real tabular fraud CSV drove home how much **feature contract** discipline matters—if production payloads do not match training columns, the best model in the world only produces support tickets.
