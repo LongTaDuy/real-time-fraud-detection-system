@@ -1,0 +1,8 @@
+{
+  "target_column": "is_fraud",
+  "id_columns": ["txn_id"],
+  "categorical_columns": ["merchant_category", "device_type", "country"],
+  "numeric_columns": ["amount", "distance_from_home", "session_length_sec"],
+  "drop_columns": [],
+  "positive_label": 1
+}

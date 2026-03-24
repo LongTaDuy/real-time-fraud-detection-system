@@ -1,0 +1,619 @@
+{
+  "meta": {
+    "version": "1",
+    "generator": "scripts/generate_demo_data.py",
+    "seed": 42,
+    "description": "Synthetic fintech transactions for demos, README screenshots, and interviews."
+  },
+  "transactions": [
+    {
+      "transaction_id": "txn_demo_gen_0000",
+      "customer_id": "cus_demo_9935",
+      "amount": "194.35",
+      "merchant": "Whole Foods Market",
+      "category": "grocery",
+      "country": "US",
+      "city": "Seattle",
+      "device_type": "mobile",
+      "ip_address": "152.216.16.8",
+      "transacted_at": "2025-03-18T12:03:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.0702,
+        "latency_ms": 10,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0002",
+      "customer_id": "cus_demo_2674",
+      "amount": "113.43",
+      "merchant": "Shell",
+      "category": "gas",
+      "country": "DE",
+      "city": "Berlin",
+      "device_type": "mobile",
+      "ip_address": "98.49.183.217",
+      "transacted_at": "2025-03-18T12:24:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.0975,
+        "latency_ms": 19,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0001",
+      "customer_id": "cus_demo_9928",
+      "amount": "134.77",
+      "merchant": "Uber",
+      "category": "transport",
+      "country": "US",
+      "city": "Austin",
+      "device_type": "web",
+      "ip_address": "57.229.142.208",
+      "transacted_at": "2025-03-18T12:27:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.5957,
+        "latency_ms": 8,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0003",
+      "customer_id": "cus_demo_2291",
+      "amount": "211.05",
+      "merchant": "Target",
+      "category": "retail",
+      "country": "US",
+      "city": "Chicago",
+      "device_type": "pos",
+      "ip_address": "76.185.98.181",
+      "transacted_at": "2025-03-18T12:33:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.213,
+        "latency_ms": 10,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0004",
+      "customer_id": "cus_demo_2654",
+      "amount": "63.98",
+      "merchant": "Starbucks",
+      "category": "food_and_drink",
+      "country": "DE",
+      "city": "Berlin",
+      "device_type": "web",
+      "ip_address": "72.232.186.42",
+      "transacted_at": "2025-03-18T12:35:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.0487,
+        "latency_ms": 19,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0005",
+      "customer_id": "cus_demo_3803",
+      "amount": "176.34",
+      "merchant": "Netflix",
+      "category": "subscription",
+      "country": "US",
+      "city": "Austin",
+      "device_type": "pos",
+      "ip_address": "187.125.83.119",
+      "transacted_at": "2025-03-18T12:37:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2661,
+        "latency_ms": 20,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0006",
+      "customer_id": "cus_demo_4752",
+      "amount": "181.71",
+      "merchant": "Amazon",
+      "category": "retail",
+      "country": "DE",
+      "city": "Berlin",
+      "device_type": "mobile",
+      "ip_address": "207.161.205.69",
+      "transacted_at": "2025-03-18T12:43:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.1367,
+        "latency_ms": 10,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0007",
+      "customer_id": "cus_demo_8517",
+      "amount": "229.91",
+      "merchant": "Uber",
+      "category": "transport",
+      "country": "CA",
+      "city": "Toronto",
+      "device_type": "mobile",
+      "ip_address": "68.71.126.191",
+      "transacted_at": "2025-03-18T13:01:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.256,
+        "latency_ms": 25,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0009",
+      "customer_id": "cus_demo_7304",
+      "amount": "165.20",
+      "merchant": "Whole Foods Market",
+      "category": "grocery",
+      "country": "US",
+      "city": "Austin",
+      "device_type": "web",
+      "ip_address": "153.239.128.249",
+      "transacted_at": "2025-03-18T13:05:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.172,
+        "latency_ms": 25,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0008",
+      "customer_id": "cus_demo_4593",
+      "amount": "196.74",
+      "merchant": "Spotify",
+      "category": "subscription",
+      "country": "US",
+      "city": "Chicago",
+      "device_type": "mobile",
+      "ip_address": "131.252.46.194",
+      "transacted_at": "2025-03-18T13:07:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2301,
+        "latency_ms": 9,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0010",
+      "customer_id": "cus_demo_6573",
+      "amount": "189.14",
+      "merchant": "Starbucks",
+      "category": "food_and_drink",
+      "country": "DE",
+      "city": "Berlin",
+      "device_type": "mobile",
+      "ip_address": "76.222.80.117",
+      "transacted_at": "2025-03-18T13:18:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2133,
+        "latency_ms": 8,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0012",
+      "customer_id": "cus_demo_6947",
+      "amount": "240.00",
+      "merchant": "Spotify",
+      "category": "subscription",
+      "country": "CA",
+      "city": "Toronto",
+      "device_type": "web",
+      "ip_address": "62.29.123.225",
+      "transacted_at": "2025-03-18T13:27:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.1959,
+        "latency_ms": 10,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0013",
+      "customer_id": "cus_demo_3103",
+      "amount": "129.08",
+      "merchant": "Whole Foods Market",
+      "category": "grocery",
+      "country": "DE",
+      "city": "Berlin",
+      "device_type": "pos",
+      "ip_address": "122.84.135.136",
+      "transacted_at": "2025-03-18T13:35:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2118,
+        "latency_ms": 21,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0011",
+      "customer_id": "cus_demo_5889",
+      "amount": "200.22",
+      "merchant": "Amazon",
+      "category": "retail",
+      "country": "CA",
+      "city": "Toronto",
+      "device_type": "pos",
+      "ip_address": "130.101.78.96",
+      "transacted_at": "2025-03-18T13:37:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.0583,
+        "latency_ms": 13,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0015",
+      "customer_id": "cus_demo_2163",
+      "amount": "10.75",
+      "merchant": "Whole Foods Market",
+      "category": "grocery",
+      "country": "US",
+      "city": "Chicago",
+      "device_type": "pos",
+      "ip_address": "162.30.117.18",
+      "transacted_at": "2025-03-18T13:45:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2318,
+        "latency_ms": 9,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0014",
+      "customer_id": "cus_demo_7118",
+      "amount": "198.93",
+      "merchant": "Uber",
+      "category": "transport",
+      "country": "CA",
+      "city": "Toronto",
+      "device_type": "web",
+      "ip_address": "133.231.61.64",
+      "transacted_at": "2025-03-18T13:50:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.2767,
+        "latency_ms": 15,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0016",
+      "customer_id": "cus_demo_3167",
+      "amount": "136.30",
+      "merchant": "Netflix",
+      "category": "subscription",
+      "country": "US",
+      "city": "Seattle",
+      "device_type": "pos",
+      "ip_address": "147.242.124.201",
+      "transacted_at": "2025-03-18T14:09:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.1947,
+        "latency_ms": 23,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0018",
+      "customer_id": "cus_demo_5563",
+      "amount": "54.24",
+      "merchant": "Whole Foods Market",
+      "category": "grocery",
+      "country": "US",
+      "city": "Austin",
+      "device_type": "web",
+      "ip_address": "64.38.226.207",
+      "transacted_at": "2025-03-18T14:11:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.0705,
+        "latency_ms": 25,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_gen_0017",
+      "customer_id": "cus_demo_8651",
+      "amount": "29.12",
+      "merchant": "Delta Air Lines",
+      "category": "travel",
+      "country": "US",
+      "city": "Austin",
+      "device_type": "pos",
+      "ip_address": "14.50.31.104",
+      "transacted_at": "2025-03-18T14:12:00+00:00",
+      "tags": [
+        "baseline"
+      ],
+      "prediction": {
+        "prediction_label": "legit",
+        "prediction_score": 0.1475,
+        "latency_ms": 18,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo seed \u2014 synthetic routine spend.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_susp_wire_round",
+      "customer_id": "cus_demo_new_7fz",
+      "amount": "9500.00",
+      "merchant": "Offshore Wire Services Ltd",
+      "category": "wire_transfer",
+      "country": "NG",
+      "city": "Lagos",
+      "device_type": "web",
+      "ip_address": "102.89.12.44",
+      "transacted_at": "2025-03-18T14:22:11+00:00",
+      "tags": [
+        "suspicious"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.94,
+        "latency_ms": 21,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo: large round wire + high-risk geography.",
+          "factors": [
+            {
+              "feature": "amount",
+              "label": "Amount",
+              "direction": "increases_fraud_risk",
+              "strength": 1.0,
+              "contribution": 0.0,
+              "message": "Unusually large round amount for a new customer profile (demo)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_susp_crypto",
+      "customer_id": "cus_demo_risk_9k",
+      "amount": "4200.50",
+      "merchant": "QuickCrypto Exchange",
+      "category": "crypto",
+      "country": "US",
+      "city": "Miami",
+      "device_type": "web",
+      "ip_address": "185.220.101.3",
+      "transacted_at": "2025-03-18T15:05:33+00:00",
+      "tags": [
+        "suspicious"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.88,
+        "latency_ms": 18,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo: crypto cash-out pattern with datacenter-like IP.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_susp_gambling",
+      "customer_id": "cus_demo_std_2a",
+      "amount": "2500.00",
+      "merchant": "LuckySpin Online Casino",
+      "category": "gambling",
+      "country": "MT",
+      "city": "Valletta",
+      "device_type": "mobile",
+      "ip_address": "89.45.12.8",
+      "transacted_at": "2025-03-18T16:40:02+00:00",
+      "tags": [
+        "suspicious"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.81,
+        "latency_ms": 15,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo: gambling merchant + elevated ticket size.",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_susp_velocity",
+      "customer_id": "cus_demo_std_2a",
+      "amount": "899.99",
+      "merchant": "Best Buy",
+      "category": "electronics",
+      "country": "US",
+      "city": "Miami",
+      "device_type": "mobile",
+      "ip_address": "73.15.42.10",
+      "transacted_at": "2025-03-18T16:41:18+00:00",
+      "tags": [
+        "suspicious"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.76,
+        "latency_ms": 14,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo: velocity / account takeover story (same customer_id).",
+          "factors": []
+        }
+      }
+    },
+    {
+      "transaction_id": "txn_demo_susp_atm_abroad",
+      "customer_id": "cus_demo_travel_4c",
+      "amount": "800.00",
+      "merchant": "INTL ATM WITHDRAWAL",
+      "category": "cash_withdrawal",
+      "country": "RU",
+      "city": "Moscow",
+      "device_type": "atm",
+      "ip_address": "95.31.44.2",
+      "transacted_at": "2025-03-19T03:12:45+00:00",
+      "tags": [
+        "suspicious"
+      ],
+      "prediction": {
+        "prediction_label": "fraud",
+        "prediction_score": 0.79,
+        "latency_ms": 17,
+        "top_risk_factors": {
+          "method": "demo-seed",
+          "headline": "Demo: foreign ATM withdrawal inconsistent with typical home country.",
+          "factors": []
+        }
+      }
+    }
+  ]
+}

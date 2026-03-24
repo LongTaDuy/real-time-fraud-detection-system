@@ -1,0 +1,8 @@
+{
+  "target_column": "Class",
+  "id_columns": [],
+  "categorical_columns": [],
+  "numeric_columns": null,
+  "drop_columns": ["Time"],
+  "positive_label": 1
+}

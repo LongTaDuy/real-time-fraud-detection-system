@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: fraud
+      POSTGRES_PASSWORD: fraud
+      POSTGRES_DB: fraud_detection
+    ports:
+      - "${HOST_POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fraud -d fraud_detection"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "${HOST_REDIS_PORT:-6379}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build: .
+    ports:
+      - "${HOST_API_PORT:-8000}:8000"
+    environment:
+      APP_NAME: fraud-detection-api
+      DATABASE_URL: postgresql+psycopg2://fraud:fraud@postgres:5432/fraud_detection
+      REDIS_URL: redis://redis:6379/0
+      MODEL_BUNDLE_PATH: ${MODEL_BUNDLE_PATH:-}
+      FRAUD_SCORE_QUEUE_KEY: ${FRAUD_SCORE_QUEUE_KEY:-fraud:score:jobs}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: .
+    command: ["python", "-m", "app.workers.fraud_score_worker"]
+    environment:
+      APP_NAME: fraud-detection-worker
+      DATABASE_URL: postgresql+psycopg2://fraud:fraud@postgres:5432/fraud_detection
+      REDIS_URL: redis://redis:6379/0
+      MODEL_BUNDLE_PATH: ${MODEL_BUNDLE_PATH:-}
+      FRAUD_SCORE_QUEUE_KEY: ${FRAUD_SCORE_QUEUE_KEY:-fraud:score:jobs}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
